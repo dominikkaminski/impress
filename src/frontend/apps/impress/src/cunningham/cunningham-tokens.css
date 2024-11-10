@@ -523,7 +523,7 @@
   --c--components--la-gauffre--activated: true;
 }
 
-.cunningham-theme--open-desk {
+.cunningham-theme--opendesk {
   --c--theme--colors--card-border: #ededed;
   --c--theme--colors--primary-text: #637089;
   --c--theme--colors--primary-100: #f7f5ff;
@@ -598,7 +598,7 @@
   --c--theme--colors--danger-900: #3a1c1c;
   --c--theme--font--families--accent: open sans;
   --c--theme--font--families--base: open sans;
-  --c--theme--logo--src: /assets/logo-open-desk.svg;
+  --c--theme--logo--src: /assets/logo-opendesk.svg;
   --c--theme--logo--widthHeader: 110px;
   --c--theme--logo--widthFooter: 220px;
   --c--theme--logo--alt: opendesk logo;

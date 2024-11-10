@@ -7,7 +7,7 @@ import { ButtonLogin } from '@/core/auth';
 import { LanguagePicker } from '@/features/language';
 import { useResponsiveStore } from '@/stores';
 
-import { default as IconDocs } from '../assets/icon-docs.svg?url';
+import { default as IconDocs } from '../assets/logo-opendesk.svg?url';
 
 import { DropdownMenu } from './DropdownMenu';
 import { LaGaufre } from './LaGaufre';
@@ -44,7 +44,7 @@ export const Header = () => {
               $height="fit-content"
               $margin={{ top: 'auto' }}
             >
-              <Image priority src={IconDocs} alt={t('Docs Logo')} width={25} />
+              <Image priority src={IconDocs} alt={t('Docs Logo')} width={150} />
               <Text
                 $padding="2px 3px"
                 $size="8px"
@@ -53,8 +53,8 @@ export const Header = () => {
                 $position="absolute"
                 $radius="5px"
                 $css={`
-                  bottom: 13px;
-                  right: -17px;
+                  bottom: 26px;
+                  right: -20px;
                 `}
               >
                 BETA
@@ -67,7 +67,7 @@ export const Header = () => {
                 $size="1.30rem"
                 $css="font-family: 'Marianne'"
               >
-                {t('Docs')}
+                {t('Notes')}
               </Text>
             </Box>
           </StyledLink>

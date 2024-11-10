@@ -399,7 +399,7 @@ const config = {
         },
       },
     },
-    'open-desk': {
+    opendesk: {
       theme: {
         colors: {
           'card-border': '#ededed',
@@ -482,7 +482,7 @@ const config = {
           },
         },
         logo: {
-          src: '/assets/logo-open-desk.svg',
+          src: '/assets/logo-opendesk.svg',
           widthHeader: '110px',
           widthFooter: '220px',
           alt: 'OpenDesk Logo',

@@ -516,7 +516,7 @@ export const tokens = {
         'la-gauffre': { activated: true },
       },
     },
-    'open-desk': {
+    opendesk: {
       theme: {
         colors: {
           'card-border': '#ededed',
@@ -594,7 +594,7 @@ export const tokens = {
         },
         font: { families: { accent: 'Open Sans', base: 'Open Sans' } },
         logo: {
-          src: '/assets/logo-open-desk.svg',
+          src: '/assets/logo-opendesk.svg',
           widthHeader: '110px',
           widthFooter: '220px',
           alt: 'OpenDesk Logo',
