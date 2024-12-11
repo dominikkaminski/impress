@@ -361,6 +361,8 @@ frontend:
   ## @param frontend.extraVolumes Additional volumes to mount on the frontend.
   extraVolumes: []
 
+  runtimeEnvs: {}
+
 ## @section yProvider
 
 yProvider:

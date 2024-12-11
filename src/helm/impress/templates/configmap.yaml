@@ -1,0 +1,12 @@
+{{- if .Values.frontend.runtimeEnvs }}
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: frontend-runtime-env
+  namespace: {{ .Release.Namespace | quote }}
+data:
+  runtime-env.js: |
+    window.RUNTIME_ENV = {{ .Values.frontend.runtimeEnvs | toJson }};
+...
+{{- end }}

@@ -80,6 +80,11 @@ spec:
             - name: "{{ $name }}"
               mountPath: "{{ $volume.mountPath }}"
             {{- end }}
+            {{- if .Values.frontend.runtimeEnvs }}
+            - name: "frontend-runtime-env"
+              mountPath: "/usr/share/nginx/html/runtime-env.js"
+              subPath: "runtime-env.js"
+            {{- end }}
             {{- range .Values.frontend.extraVolumeMounts }}
             - name: {{ .name }}
               mountPath: {{ .mountPath }}
@@ -99,6 +104,11 @@ spec:
         {{- toYaml . | nindent 8 }}
       {{- end }}
       volumes:
+        {{- if .Values.frontend.runtimeEnvs }}
+        - name: "frontend-runtime-env"
+          configMap:
+            name: "frontend-runtime-env"
+        {{- end }}
         {{- range $index, $value := .Values.mountFiles }}
         - name: "files-{{ $index }}"
           configMap:
