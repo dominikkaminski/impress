@@ -456,3 +456,7 @@ yProvider:
 
   ## @param yProvider.extraVolumes Additional volumes to mount on the yProvider.
   extraVolumes: []
+
+cleanup:
+  deletePodsOnSuccess: true
+  deletePodsOnSuccessTimeout: 60
