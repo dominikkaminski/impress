@@ -74,6 +74,8 @@ spec:
               subPath: {{ .subPath | default "" }}
               readOnly: {{ .readOnly }}
             {{- end }}
+            - name: "tmp"
+              mountPath: "/tmp"
       {{- with .Values.backend.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}
@@ -123,3 +125,5 @@ spec:
           emptyDir: {}
           {{- end }}
         {{- end }}
+        - name: "tmp"
+          emptyDir: {}
